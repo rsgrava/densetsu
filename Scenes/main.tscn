@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://df2hkmmnywycy"]
+[gd_scene load_steps=3 format=3 uid="uid://df2hkmmnywycy"]
 
 [ext_resource type="TileSet" uid="uid://buqlhuv4jywbc" path="res://Assets/TileSets/gentle_forest.tres" id="1_e6niq"]
+[ext_resource type="PackedScene" uid="uid://ck6t5b722u0st" path="res://Entities/player.tscn" id="2_03pcp"]
 
 [node name="Main" type="Node2D"]
 
@@ -14,3 +15,6 @@ layer_0/tile_data = PackedInt32Array(0, 28, 0, 65536, 28, 1, 131072, 28, 2, 1966
 tile_set = ExtResource("1_e6niq")
 format = 2
 layer_0/tile_data = PackedInt32Array(393222, 28, 6, 458758, 28, 7, 393223, 28, 6, 458759, 28, 7, 393224, 28, 6, 458760, 28, 7, 393221, 28, 6, 458757, 28, 7, 393220, 28, 4, 458756, 28, 5, 393225, 28, 131076, 458761, 28, 131077)
+
+[node name="Player" parent="." instance=ExtResource("2_03pcp")]
+position = Vector2(66, 19)
