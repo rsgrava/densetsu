@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://ck6t5b722u0st"]
+[gd_scene load_steps=4 format=3 uid="uid://ck6t5b722u0st"]
 
 [ext_resource type="Script" path="res://Entities/player.gd" id="1_xendc"]
+[ext_resource type="Script" path="res://Entities/player_camera.gd" id="2_x8jq3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cpp7j"]
 
@@ -13,3 +14,4 @@ script = ExtResource("1_xendc")
 shape = SubResource("RectangleShape2D_cpp7j")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("2_x8jq3")
