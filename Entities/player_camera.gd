@@ -16,8 +16,5 @@ func _ready():
 		limit_right -= (limit_right - limit_left) / 2
 		limit_right += view_w / 2
 	if limit_bottom < view_h:
-		print(limit_top)
 		limit_top += (limit_bottom - limit_top) / 2
-		print(limit_top)
 		limit_top -= view_h / 2
-		print(limit_top)
