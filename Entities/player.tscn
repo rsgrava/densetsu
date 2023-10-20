@@ -8,6 +8,7 @@
 size = Vector2(14, 29)
 
 [node name="Player" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_xendc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

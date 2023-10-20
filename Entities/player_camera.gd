@@ -13,8 +13,8 @@ func _ready():
 	var view_w = get_viewport().size.x
 	var view_h = get_viewport().size.y
 	if limit_right < view_w:
-		limit_right -= (limit_right - limit_left) / 2
+		limit_right -= int((limit_right - limit_left) / 2.0)
 		limit_right += view_w / 2
 	if limit_bottom < view_h:
-		limit_top += (limit_bottom - limit_top) / 2
+		limit_top += int((limit_bottom - limit_top) / 2.0)
 		limit_top -= view_h / 2
