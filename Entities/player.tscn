@@ -1,22 +1,23 @@
 [gd_scene load_steps=5 format=3 uid="uid://ck6t5b722u0st"]
 
 [ext_resource type="Script" path="res://Entities/player.gd" id="1_xendc"]
-[ext_resource type="SpriteFrames" uid="uid://dvrcq72j5g823" path="res://Assets/SpriteFrames/character.tres" id="2_js6q2"]
+[ext_resource type="SpriteFrames" uid="uid://dvrcq72j5g823" path="res://Resources/SpriteFrames/character.tres" id="2_oh4cm"]
 [ext_resource type="Script" path="res://Entities/player_camera.gd" id="2_x8jq3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aol15"]
-size = Vector2(14, 29)
+size = Vector2(14, 14)
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_xendc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("2_js6q2")
+sprite_frames = ExtResource("2_oh4cm")
 animation = &"idle_down"
+frame_progress = 0.989828
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -2.5)
+position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_aol15")
 
 [node name="Camera2D" type="Camera2D" parent="."]
